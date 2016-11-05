@@ -5,6 +5,26 @@
     </head>
 
     <body>
-        <p>Graphing calculators are interesting machines.</p>
+        <p>I started programming on graphing calculators like the TI-83 (which I still use today).</p>
+        <p>Attempting to replicate it's firmware, I wrote a program in Java which could plot single variable functions
+           on the cartesian plane. The graphing of the function relies on evaluating the function at discrete x and y values
+           which are determined through the variable <i>accuracyIndex</i>.<p>
+        <p>Below we try plotting <i>y(x) = sin(x) + x</i></p>
+        <p>For example, an <i>accuracyIndex</i> of 20.0 produces: </p>
+        <img src="http://i.imgur.com/xUDO7HK.png" alt = "SandGraph20.0" width="400" height="400"/>
+
+        <p>While an <i>accuracyIndex</i> of 1.0 produces: </p>
+        <img src="http://i.imgur.com/2Gt9v5y.png" alt = "SandGraph1.0" width="400" height="400"/>
+
+        <p>The <i>GraphWindow</i> class relies on the <i>java.awt.*</i> and <i>java.swing.*</i> packages. The
+        window, panel, and drawing functions are in the classes within those packages.</p>
+        <p>The difficulty designing a graphing simulator has to do with scaling the axis depending on window
+        size. Which window size are we taling about? Both of them: the window you can set to full screen, and the
+        window of the x-y plane (which has a min/max range). </p>
+
+        <p>Adjusting the ranges, we can visualize a gaussian curve with variace σ = 0.846</p>
+        <img src="http://i.imgur.com/izcSs3g.png" alt = "Gaussian" width="1000" height="400"/>
+        
+        <p>Modified 11/4/16 by Pedro Sandoval</p>
     </body>
 </html>
